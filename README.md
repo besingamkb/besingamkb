@@ -4,6 +4,7 @@
   <img src="https://views.whatilearened.today/views/github/besingamkb/views.svg" />
   <a href="https://github.com/besingamkb/"><img src="https://img.shields.io/github/followers/besingamkb?color=%234CC61E&label=GitHub%20Followers%20%3A"/></a>
   <img src="https://img.shields.io/badge/Front End-Vue.js-42b883"/>
-  <img src="https://img.shields.io/badge/Back End-Laravel-f55247"/>
+  <img src="https://img.shields.io/badge/Back End-Laravel-f55247"/>    
+  <img src="https://img.shields.io/badge/Os-Fedora-0b57a4"/>
 </p>
 </p>
