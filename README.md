@@ -6,5 +6,6 @@
   <img src="https://img.shields.io/badge/Front End-Vue.js-42b883"/>
   <img src="https://img.shields.io/badge/Back End-Laravel-f55247"/>    
   <img src="https://img.shields.io/badge/Os-Fedora-0b57a4"/>
+    <img src="https://img.shields.io/badge/Os-Ubuntu-a80030"/>
 </p>
 </p>
