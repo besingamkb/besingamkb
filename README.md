@@ -32,19 +32,19 @@
   <thead>
     <tr align="center" width="100%">
       <th align="center" width="20%">
-        <h5 align="center">Programming Languages:</h5>
+        <h5 align="center">Programming Languages</h5>
       </th>
       <th align="center" width="20%">
-        <h5 align="center">Backend Frameworks:</h5>
+        <h5 align="center">Backend Frameworks</h5>
       </th>
       <th align="center" width="20%">
-        <h5 align="center">Frontend Frameworks:</h5>
+        <h5 align="center">Frontend Frameworks</h5>
       </th>
       <th align="center" width="20%">
-        <h5 align="center">Databases:</h5>
+        <h5 align="center">Databases</h5>
       </th>
       <th align="center" width="20%">
-        <h5 align="center">Mobile, Desktop, PWA, SPA etc.:</h5>
+        <h5 align="center">Mobile, Desktop, PWA, SPA etc.</h5>
       </th>
     </tr>
   </thead>
