@@ -29,9 +29,27 @@
 </p>
 
 <table align="center">
+  <thead>
+    <tr align="center" width="100%">
+      <th align="center" width="20%">
+        <h5 align="center">Programming Languages:</h5>
+      </th>
+      <th align="center" width="20%">
+        <h5 align="center">Backend Frameworks:</h5>
+      </th>
+      <th align="center" width="20%">
+        <h5 align="center">Frontend Frameworks:</h5>
+      </th>
+      <th align="center" width="20%">
+        <h5 align="center">Databases:</h5>
+      </th>
+      <th align="center" width="20%">
+        <h5 align="center">Mobile, Desktop, PWA, SPA etc.:</h5>
+      </th>
+    </tr>
+  </thead>
   <tr align="center" width="100%">
     <td align="center" width="20%">
-      <h5 align="center">Programming Languages:</h5>
       <p align="center">
         <!-- php -->
         <a href="https://www.php.net" target="_blank" rel="noreferrer">
@@ -89,7 +107,6 @@
       </p>
     </td>
     <td align="center" width="20%">
-      <h5 align="center">Backend Frameworks:</h5>
       <p align="center">
         <!-- laravel -->
         <a href="https://laravel.com/" target="_blank" rel="noreferrer">
@@ -130,7 +147,6 @@
       </p>
     </td>
     <td align="center" width="20%">
-      <h5 align="center">Frontend Frameworks:</h5>
       <p align="center">
         <!-- angular -->
         <a href="https://angular.io" target="_blank" rel="noreferrer">
@@ -162,7 +178,6 @@
       </p>
     </td>
     <td align="center" width="20%">
-      <h5 align="center">Databases:</h5>
       <p align="center">
         <!-- mysql -->
         <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
@@ -216,7 +231,6 @@
       </p>
     </td>
     <td align="center" width="20%">
-      <h5 align="center">Mobile, Desktop, PWA, SPA etc.:</h5>
       <p align="center">
         <!-- quassar -->
         <a href="https://quasar.dev/" target="_blank" rel="noreferrer">
