@@ -392,7 +392,7 @@
       width="40"
   /></a>
   <a
-    href="https://stackoverflow.com/users/https://stackoverflow.com/users/2659774/kevdev"
+    href="https://stackoverflow.com/users/2659774/kevdev"
     target="blank"
     ><img
       align="center"
