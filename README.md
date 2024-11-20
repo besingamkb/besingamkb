@@ -56,7 +56,7 @@
       height="30"
       width="40"
   /></a>
-  <a
+  <a style="display:none"
     href="https://stackoverflow.com/users/2659774/kevdev"
     target="blank"
     ><img
