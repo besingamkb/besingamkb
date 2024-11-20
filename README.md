@@ -6,7 +6,7 @@
     alt="besingamkb"
   />
 </p>
-<p>
+<p style="display:none;">
   <img
     align="left"
     src="https://github-readme-stats.vercel.app/api/top-langs?username=besingamkb&show_icons=true&locale=en&layout=compact"
