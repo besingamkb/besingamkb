@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm Mark Kevin Cardente Besinga</h1>
-<h3 align="center">Full Stack Web Developer</h3>
+<h1 align="left">Hi 👋, I'm Mark Kevin Cardente Besinga</h1>
+<h3 align="left">Software Developer</h3>
 <p align="left">
   <img
     src="https://komarev.com/ghpvc/?username=besingamkb&label=Profile%20views&color=0e75b6&style=flat"
@@ -7,13 +7,15 @@
   />
 </p>
 
-**Programming Language**: PHP, Javascript / Typescript, Go, Rust, Python
+**Programming Language**: PHP, Typescript, Rust, Go, Python, Javascript
 
 **Web Frameworks / Libraries**: Laravel, React, Vue, Angular
 
 **Databases**: Mysql/MariaDB, PostgreSQL, SQLite, Redis, Mongodb, dynamoDB, 
 
 **Testing Tools**: PHPUnit, Jest, Selenium, TDD
+
+**Desktop and Mobile**: React Native, ionic, electron
 
 **Others**: OOP, SOLID principles, Design Patterns
 
