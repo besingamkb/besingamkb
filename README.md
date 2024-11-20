@@ -6,13 +6,13 @@
     alt="besingamkb"
   />
 </p>
-<p style="display:none;">
+<!--- <p>
   <img
     align="left"
     src="https://github-readme-stats.vercel.app/api/top-langs?username=besingamkb&show_icons=true&locale=en&layout=compact"
     alt="besingamkb"
   />
-</p>
+</p> --->
 <p>
   &nbsp;<img
     align="center"
