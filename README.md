@@ -42,14 +42,8 @@
 </p>
 
 
-<p align="left">
-  <a href="https://github.com/ryo-ma/github-profile-trophy"
-    ><img
-      src="https://github-profile-trophy.vercel.app/?username=besingamkb"
-      alt="besingamkb"
-  /></a>
-</p>
-<h3 align="left">Connect with me:</h3>
+
+<h5 align="left">Connect with me:</h5>
 <p align="left">
   <a href="https://twitter.com/bmkmark77391" target="blank"
     ><img
