@@ -56,16 +56,6 @@
       height="30"
       width="40"
   /></a>
-  <a style="display:none"
-    href="https://stackoverflow.com/users/2659774/kevdev"
-    target="blank"
-    ><img
-      align="center"
-      src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg"
-      alt="https://stackoverflow.com/users/2659774/kevdev"
-      height="30"
-      width="40"
-  /></a>
   <a href="https://fb.com/https://www.facebook.com/besingamk" target="blank"
     ><img
       align="center"
