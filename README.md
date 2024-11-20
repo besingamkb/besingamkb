@@ -36,13 +36,6 @@
       alt="besingamkb"
   /></a>
 </p>
-<p align="left">
-  <a href="https://twitter.com/bmkmark77391" target="blank"
-    ><img
-      src="https://img.shields.io/twitter/follow/bmkmark77391?logo=twitter&style=for-the-badge"
-      alt="bmkmark77391"
-  /></a>
-</p>
 <h3 align="left">Connect with me:</h3>
 <p align="left">
   <a href="https://twitter.com/bmkmark77391" target="blank"
