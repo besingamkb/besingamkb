@@ -27,7 +27,7 @@
     alt="besingamkb"
   />
 </p>
-
+<!---
 <table align="center">
   <thead>
     <tr align="center" width="100%">
@@ -290,7 +290,7 @@
     </td>
   </tr>
 </table>
-
+--->
 <h5 align="left">Tools and others:</h5>
 <p align="left">
   <!-- git -->
