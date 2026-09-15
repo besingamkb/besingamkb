@@ -6,7 +6,7 @@ const USERNAME = 'besingamkb';
 const API = process.env.GITHUB_API_URL ?? 'https://api.github.com';
 const outputPath = process.env.TELEMETRY_OUTPUT_PATH
   ? path.resolve(process.env.TELEMETRY_OUTPUT_PATH)
-  : path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../assets/telemetry.svg');
+  : path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../assets/telemetry-v2.svg');
 const headers = {
   Accept: 'application/vnd.github+json',
   'X-GitHub-Api-Version': '2022-11-28',

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/telemetry.svg" width="100%" alt="Mark Kevin Besinga — developer telemetry dashboard" />
+  <img src="./assets/telemetry-v2.svg" width="100%" alt="Mark Kevin Besinga — developer telemetry dashboard" />
 </p>
 
 <p align="center">
