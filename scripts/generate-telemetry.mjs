@@ -29,19 +29,6 @@ async function listRepositories() {
   }
 }
 
-async function mapWithConcurrency(items, limit, task) {
-  const results = new Array(items.length);
-  let cursor = 0;
-  async function worker() {
-    while (cursor < items.length) {
-      const index = cursor++;
-      results[index] = await task(items[index]);
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
-  return results;
-}
-
 const xml = value => String(value)
   .replaceAll('&', '&amp;')
   .replaceAll('<', '&lt;')
@@ -54,15 +41,15 @@ const languageColors = {
   Ruby: '#701516', Shell: '#4EAA25', Dockerfile: '#384D54', 'C#': '#178600', 'C++': '#F34B7D',
 };
 
-function formatLanguages(languageMaps) {
+function formatLanguages(repositories) {
   const totals = new Map();
-  for (const languages of languageMaps) {
-    for (const [name, bytes] of Object.entries(languages)) totals.set(name, (totals.get(name) ?? 0) + bytes);
+  for (const repository of repositories) {
+    if (repository.language) totals.set(repository.language, (totals.get(repository.language) ?? 0) + 1);
   }
-  const totalBytes = [...totals.values()].reduce((sum, bytes) => sum + bytes, 0);
+  const repositoryCount = [...totals.values()].reduce((sum, count) => sum + count, 0);
   const ranked = [...totals.entries()]
-    .map(([name, bytes]) => ({ name, bytes, percent: totalBytes ? (bytes / totalBytes) * 100 : 0 }))
-    .sort((a, b) => b.bytes - a.bytes);
+    .map(([name, count]) => ({ name, count, percent: repositoryCount ? (count / repositoryCount) * 100 : 0 }))
+    .sort((a, b) => b.count - a.count);
   const visible = ranked.slice(0, 7);
   const otherPercent = ranked.slice(7).reduce((sum, language) => sum + language.percent, 0);
   if (otherPercent > 0.05) visible.push({ name: 'Other', percent: otherPercent });
@@ -138,7 +125,7 @@ function render({ profile, allRepositories, originalRepositories, languages }) {
   ${metric(44, profile.public_repos, 'PUBLIC REPOS')}${metric(205, originalRepositories.length, 'ORIGINAL BUILDS')}${metric(366, stars, 'ORIGINAL STARS')}${metric(527, profile.followers, 'FOLLOWERS')}${metric(688, `${years}+`, 'YEARS SHIPPING')}
   <rect x="44" y="360" width="812" height="1" fill="#D8DEE4"/>
   <text class="section" x="44" y="395">REPOSITORY LANGUAGE MIX</text>
-  <text class="updated" x="856" y="395" text-anchor="end">code bytes · original repositories · forks excluded</text>
+  <text class="updated" x="856" y="395" text-anchor="end">primary language · original repositories · forks excluded</text>
   <clipPath id="bar"><rect x="44" y="418" width="812" height="14" rx="7"/></clipPath><g clip-path="url(#bar)">${languageBar}</g>
   ${legend}
   <rect x="44" y="530" width="398" height="210" rx="7" class="panel"/><rect x="458" y="530" width="398" height="210" rx="7" class="panel"/>
@@ -154,9 +141,7 @@ function render({ profile, allRepositories, originalRepositories, languages }) {
 async function main() {
   const [profile, allRepositories] = await Promise.all([github(`/users/${USERNAME}`), listRepositories()]);
   const originalRepositories = allRepositories.filter(repository => !repository.fork && !repository.archived);
-  const languageMaps = await mapWithConcurrency(originalRepositories, 8, repository =>
-    github(`/repos/${USERNAME}/${encodeURIComponent(repository.name)}/languages`));
-  const languages = formatLanguages(languageMaps);
+  const languages = formatLanguages(originalRepositories);
   if (!languages.length) throw new Error('No language data returned; keeping the previous telemetry asset.');
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, render({ profile, allRepositories, originalRepositories, languages }));
